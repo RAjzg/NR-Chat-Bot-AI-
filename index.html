@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NR Chatbot AI</title>
+</head>
+<body>
+    <h2>🤖 NR Chatbot AI</h2>
+
+    <form method="post">
+        <input name="message" placeholder="মেসেজ লিখুন" required>
+        <button type="submit">Send</button>
+    </form>
+
+    {% if reply %}
+    <p><b>Bot:</b> {{ reply }}</p>
+    {% endif %}
+</body>
+</html>
